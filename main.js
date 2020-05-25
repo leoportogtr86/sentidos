@@ -24,6 +24,13 @@ var sampler = new Tone.Sampler({
         
 
         sampler.triggerAttack('C3')
+        item1.classList.add('animate__flash')
+
+        setTimeout(function () {
+            item1.classList.remove('animate__flash')
+        }, 1000)
+
+
 
     }
 
@@ -31,6 +38,12 @@ var sampler = new Tone.Sampler({
     item2.onclick = function () {
 
         sampler.triggerAttack('F3')
+        item2.classList.add('animate__shakeX')
+        
+
+        setTimeout(function () {
+            item2.classList.remove('animate__shakeX')
+        }, 1000)
 
 
 
@@ -41,6 +54,12 @@ var sampler = new Tone.Sampler({
     item3.onclick = function () {
 
         sampler.triggerAttack('F3')
+        item3.classList.add('animate__shakeX')
+
+
+        setTimeout(function () {
+            item3.classList.remove('animate__shakeX')
+        }, 1000)
 
 
 
@@ -52,6 +71,12 @@ var sampler = new Tone.Sampler({
     item4.onclick = function () {
 
         sampler.triggerAttack('F3')
+        item4.classList.add('animate__shakeX')
+
+
+        setTimeout(function () {
+            item4.classList.remove('animate__shakeX')
+        }, 1000)
 
 
 
@@ -62,6 +87,12 @@ var sampler = new Tone.Sampler({
     item5.onclick = function () {
 
         sampler.triggerAttack('F3')
+        item5.classList.add('animate__shakeX')
+
+
+        setTimeout(function () {
+            item5.classList.remove('animate__shakeX')
+        }, 1000)
 
 
 
