@@ -22,22 +22,16 @@ var sampler = new Tone.Sampler({
 
     item1.onclick = function () {
 
-        
+        sampler.triggerAttack('F3')
+        item1.classList.add('animate__shakeX')
 
-        sampler.triggerAttack('C3')
-        item1.classList.add('animate__flash')
 
         setTimeout(function () {
-            item1.classList.remove('animate__flash')
+            item1.classList.remove('animate__shakeX')
         }, 1000)
 
-        setTimeout(function () {
+        
 
-            window.location = 'q2.html'
-            
-        }, 2000)
-
-        progresso.style.width = "25%"
 
 
 
@@ -95,13 +89,21 @@ var sampler = new Tone.Sampler({
 
     item5.onclick = function () {
 
-        sampler.triggerAttack('F3')
-        item5.classList.add('animate__shakeX')
-
+        
+        sampler.triggerAttack('C3')
+        item5.classList.add('animate__flash')
 
         setTimeout(function () {
-            item5.classList.remove('animate__shakeX')
+            item5.classList.remove('animate__flash')
         }, 1000)
+
+        setTimeout(function () {
+
+            window.location = 'q4.html'
+            
+        }, 2000)
+
+        progresso.style.width = "75%"
 
 
 

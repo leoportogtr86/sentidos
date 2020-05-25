@@ -33,11 +33,11 @@ var sampler = new Tone.Sampler({
 
         setTimeout(function () {
 
-            window.location = 'q2.html'
+            window.location = 'win.html'
             
         }, 2000)
 
-        progresso.style.width = "25%"
+        progresso.style.width = "100%"
 
 
 
