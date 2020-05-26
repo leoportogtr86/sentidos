@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.7.2/Tone.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
     <title>Sentidos</title>
   </head>
   <body>
@@ -54,9 +55,19 @@
         </div>
     </div>
 
+    <div id = 'oops' class="alert-danger text-center ">
+        <h1 class="text-center glyphicon glyphicon-thumbs-down">Oops!</h1>
+    </div>
+
+    <div id = 'yeah' class="alert-info text-center " >
+        <h1 class="text-center glyphicon glyphicon-thumbs-up">Yeah!</h1>
+    </div>
+
     <div class="progress">
         <div id = "progresso" class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="25%" aria-valuemin="0" aria-valuemax="100"></div>
     </div>
+
+    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

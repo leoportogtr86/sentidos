@@ -8,6 +8,10 @@ let errou = document.querySelector('#errou')
 let acertou = document.querySelector('#acertou')
 let progresso = document.querySelector('#progresso')
 
+
+let oops = document.querySelector('#oops')
+let yeah = document.querySelector('#yeah')
+
 console.log('hello world')
 
 
@@ -15,7 +19,8 @@ console.log('hello world')
 
 var sampler = new Tone.Sampler({
     "C3": "acertou.mp3",
-    "F3": "errou.mp3"
+    "F3": "errou.mp3",
+    "E3": "venceu.mp3"
 }, function () {
 
 
@@ -26,9 +31,11 @@ var sampler = new Tone.Sampler({
 
         sampler.triggerAttack('C3')
         item1.classList.add('animate__flash')
+        yeah.style.display = 'block'
 
         setTimeout(function () {
             item1.classList.remove('animate__flash')
+            oops.style.display = 'none'
         }, 1000)
 
         setTimeout(function () {
@@ -48,10 +55,12 @@ var sampler = new Tone.Sampler({
 
         sampler.triggerAttack('F3')
         item2.classList.add('animate__shakeX')
+        oops.style.display = 'block'
         
 
         setTimeout(function () {
             item2.classList.remove('animate__shakeX')
+            oops.style.display = 'none'
         }, 1000)
 
 
@@ -64,10 +73,12 @@ var sampler = new Tone.Sampler({
 
         sampler.triggerAttack('F3')
         item3.classList.add('animate__shakeX')
+        oops.style.display = 'block'
 
 
         setTimeout(function () {
             item3.classList.remove('animate__shakeX')
+            oops.style.display = 'none'
         }, 1000)
 
 
@@ -81,10 +92,12 @@ var sampler = new Tone.Sampler({
 
         sampler.triggerAttack('F3')
         item4.classList.add('animate__shakeX')
+        oops.style.display = 'block'
 
 
         setTimeout(function () {
             item4.classList.remove('animate__shakeX')
+            oops.style.display = 'none'
         }, 1000)
 
 
@@ -97,10 +110,12 @@ var sampler = new Tone.Sampler({
 
         sampler.triggerAttack('F3')
         item5.classList.add('animate__shakeX')
+        oops.style.display = 'block'
 
 
         setTimeout(function () {
             item5.classList.remove('animate__shakeX')
+            oops.style.display = 'none'
         }, 1000)
 
 

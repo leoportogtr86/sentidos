@@ -1,3 +1,5 @@
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css");
+
 
 img{
 
@@ -7,12 +9,22 @@ img{
 
 #img-topo{
 
-    margin-bottom: 200px;
+    margin-bottom: 100px;
     background-color: blue;
     
 }
 .progress{
 
-    margin-top: 10px;
+    margin: 10px;
+
+    
+}
+
+
+#oops, #yeah{
+
+    display: none;
+
+    
     
 }

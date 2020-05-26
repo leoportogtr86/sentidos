@@ -8,6 +8,9 @@ let errou = document.querySelector('#errou')
 let acertou = document.querySelector('#acertou')
 let progresso = document.querySelector('#progresso')
 
+let oops = document.querySelector('#oops')
+let yeah = document.querySelector('#yeah')
+
 console.log('hello world')
 
 
@@ -26,10 +29,12 @@ var sampler = new Tone.Sampler({
 
         sampler.triggerAttack('F3')
         item1.classList.add('animate__shakeX')
+        oops.style.display = 'block'
         
 
         setTimeout(function () {
             item1.classList.remove('animate__shakeX')
+            oops.style.display = 'none'
         }, 1000)
 
 
@@ -44,10 +49,12 @@ var sampler = new Tone.Sampler({
 
         sampler.triggerAttack('F3')
         item2.classList.add('animate__shakeX')
+        oops.style.display = 'block'
         
 
         setTimeout(function () {
             item2.classList.remove('animate__shakeX')
+            oops.style.display = 'none'
         }, 1000)
 
 
@@ -61,8 +68,11 @@ var sampler = new Tone.Sampler({
         sampler.triggerAttack('C3')
         item3.classList.add('animate__flash')
 
+        yeah.style.display = 'block'
+
         setTimeout(function () {
             item1.classList.remove('animate__flash')
+            yeah.style.display = 'none'
         }, 1000)
 
         progresso.style.width = "50%"
@@ -87,10 +97,12 @@ var sampler = new Tone.Sampler({
 
         sampler.triggerAttack('F3')
         item4.classList.add('animate__shakeX')
+        oops.style.display = 'block'
 
 
         setTimeout(function () {
             item4.classList.remove('animate__shakeX')
+            oops.style.display = 'none'
         }, 1000)
 
 
@@ -103,10 +115,12 @@ var sampler = new Tone.Sampler({
 
         sampler.triggerAttack('F3')
         item5.classList.add('animate__shakeX')
+        oops.style.display = 'block'
 
 
         setTimeout(function () {
             item5.classList.remove('animate__shakeX')
+            oops.style.display = 'none'
         }, 1000)
 
 

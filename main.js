@@ -8,6 +8,8 @@ let errou = document.querySelector('#errou')
 let acertou = document.querySelector('#acertou')
 let progresso = document.querySelector('#progresso')
 
+let oops = document.querySelector('#oops')
+let yeah = document.querySelector('#yeah')
 console.log('hello world')
 
 
@@ -22,6 +24,8 @@ var sampler = new Tone.Sampler({
 
     item1.onclick = function () {
 
+        yeah.style.display = 'block'
+
         
 
         sampler.triggerAttack('C3')
@@ -29,6 +33,7 @@ var sampler = new Tone.Sampler({
 
         setTimeout(function () {
             item1.classList.remove('animate__flash')
+            yeah.style.display = 'none'
         }, 1000)
 
         setTimeout(function () {
@@ -46,12 +51,15 @@ var sampler = new Tone.Sampler({
 
     item2.onclick = function () {
 
+        oops.style.display = 'block'
+
         sampler.triggerAttack('F3')
         item2.classList.add('animate__shakeX')
         
 
         setTimeout(function () {
             item2.classList.remove('animate__shakeX')
+            oops.style.display = 'none'
         }, 1000)
 
 
@@ -64,10 +72,12 @@ var sampler = new Tone.Sampler({
 
         sampler.triggerAttack('F3')
         item3.classList.add('animate__shakeX')
+        oops.style.display = 'block'
 
 
         setTimeout(function () {
             item3.classList.remove('animate__shakeX')
+            oops.style.display = 'none'
         }, 1000)
 
 
@@ -81,10 +91,12 @@ var sampler = new Tone.Sampler({
 
         sampler.triggerAttack('F3')
         item4.classList.add('animate__shakeX')
+        oops.style.display = 'block'
 
 
         setTimeout(function () {
             item4.classList.remove('animate__shakeX')
+            oops.style.display = 'none'
         }, 1000)
 
 
@@ -97,10 +109,12 @@ var sampler = new Tone.Sampler({
 
         sampler.triggerAttack('F3')
         item5.classList.add('animate__shakeX')
+        oops.style.display = 'block'
 
 
         setTimeout(function () {
             item5.classList.remove('animate__shakeX')
+            oops.style.display = 'none'
         }, 1000)
 
 
